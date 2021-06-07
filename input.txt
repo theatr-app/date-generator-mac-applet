@@ -1,0 +1,7 @@
+Start Date  (YYYY/MM/DD): 2021-06-06
+End Date    (YYYY/MM/DD): 2021-07-06
+Get full dates (T/F): T
+
+INPUT BELOW:
+T, 05:30, 09:30
+S, 12:30, 18:00
