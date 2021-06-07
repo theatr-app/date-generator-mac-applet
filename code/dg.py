@@ -13,6 +13,7 @@ def get_all_dates(schedule_string, start, end):
   output = []
   schedule = schedule_string.split(',')
   day = schedule[0].strip()
+  schedule = [x for x in schedule if x]
   d = get_first_date_after(start, day)
   while (d <= end):
     output += [(format_date(d) + ", " + time.strip()) for time in schedule[1:]]
@@ -30,6 +31,7 @@ def day_to_index(day):
 def get_weekly_schedule(schedule_string):
   schedule = schedule_string.split(',')
   day_str = schedule[0].strip()
+  schedule = [x for x in schedule if x]
   return [(day_str + ", " + time.strip()) for time in schedule[1:]]
 
 with open('input.txt', 'r') as reader:
